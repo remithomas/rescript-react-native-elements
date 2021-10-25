@@ -1,0 +1,26 @@
+{
+  "name": "rescript-react-native-elements",
+  "reason": {
+    "react-jsx": 3
+  },
+  "bs-dependencies": ["@rescript/react", "rescript-react-native"],
+  "suffix": ".bs.js",
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": false
+    }
+  ],
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    },
+    {
+      "dir": "examples",
+      "subdirs": true,
+      "type": "dev"
+    }
+  ],
+  "namespace": "react-native-elements"
+}
