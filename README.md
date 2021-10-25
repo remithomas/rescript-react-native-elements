@@ -1,13 +1,13 @@
-# (WIP) React Native Elements bindings for ReasonML [![Build Status](https://travis-ci.org/remithomas/bs-react-native-elements.svg?branch=master)](https://travis-ci.org/remithomas/bs-react-native-elements)
+# (WIP) React Native Elements bindings for rescript [![Build Status](https://app.travis-ci.com/remithomas/rescript-react-native-elements.svg?branch=master)](https://app.travis-ci.com/remithomas/rescript-react-native-elements)
 
 - https://react-native-training.github.io/react-native-elements/
-- https://reasonml-community.github.io/reason-react-native/
-- https://reasonml.github.io
+- https://rescript-lang.org
+- https://rescript-react-native.github.io
 
 ## Installation
 
 ```bash
-yarn add https://github.com/remithomas/bs-react-native-elements
+yarn add https://github.com/remithomas/rescript-react-native-elements
 ```
 
 Then add `rescript-react-native-elements` to `bsconfig.json`
@@ -19,7 +19,7 @@ Then add `rescript-react-native-elements` to `bsconfig.json`
 ## Version
 
 We follow versions according `React Native Elements`.
-`bs-version 2.3.*` matches `React Native Elements version 2.3.*`.
+`rescript-version 3.4.*` matches `React Native Elements version 3.4.*`.
 
 Our patch version is only elements we add or fixes we made on elements.
 
