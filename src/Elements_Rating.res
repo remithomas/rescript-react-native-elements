@@ -5,8 +5,8 @@ module Rating = {
   external make: (
     ~fractions: int=?,
     ~imageSize: int=?,
-    ~minValue: int=?,
-    ~onFinishRating: unit => unit=?,
+    ~minValue: float=?,
+    ~onFinishRating: float => unit=?,
     ~onStartRating: unit => unit=?,
     ~ratingBackgroundColor: Color.t=?,
     ~tintColor: Color.t=?,
@@ -16,8 +16,8 @@ module Rating = {
     ~ratingTextColor: Color.t=?,
     ~readonly: bool=?,
     ~showRating: bool=?,
-    ~startingValue: int=?,
-    // ~style
+    ~startingValue: float=?,
+    ~style: Style.t=?,
     ~_type: @string("type")
     [
       | #star
@@ -25,7 +25,7 @@ module Rating = {
       | #bell
       | #heart
       | #custom
-    ],
+    ]=?,
   ) => React.element = "Rating"
 }
 
@@ -34,7 +34,7 @@ module AirbnbRating = {
   external make: (
     ~count: int=?,
     ~defaultRating: int=?,
-    ~onFinishRating: unit => unit=?,
+    ~onFinishRating: float => unit=?,
     ~reviews: array<string>=?,
     ~showRating: bool=?,
     ~children: React.element=?,
