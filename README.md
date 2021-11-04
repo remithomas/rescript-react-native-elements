@@ -43,7 +43,7 @@ Our patch version is only elements we add or fixes we made on elements.
 - [x] ListItem
 - [x] Overlay
 - [x] Pricing
-- [ ] Rating
+- [x] Rating
 - [x] SearchBar
 - [ ] Slider
 - [x] SocialIcon

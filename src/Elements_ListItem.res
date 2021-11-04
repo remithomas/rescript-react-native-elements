@@ -172,3 +172,16 @@ module Title = {
     ~children: React.element=?,
   ) => React.element = "Title"
 }
+
+module Swipeable = {
+  @react.component @scope("ListItem") @module("react-native-elements")
+  external make: (
+    ~leftContent: React.element=?,
+    ~rightContent: React.element=?,
+    ~leftStyle: Style.t=?,
+    ~rightStyle: Style.t=?,
+    ~leftWidth: int=?,
+    ~rightWidth: int=?,
+    ~children: React.element=?,
+  ) => React.element = "Swipeable"
+}
