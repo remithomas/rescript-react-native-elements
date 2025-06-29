@@ -4,13 +4,18 @@
 - https://rescript-lang.org
 - https://rescript-react-native.github.io
 
+## Requirements
+
+- react-native-elements 3.4.0
+- rescript 11
+
 ## Installation
 
 ```bash
 yarn add https://github.com/remithomas/rescript-react-native-elements
 ```
 
-Then add `rescript-react-native-elements` to `bsconfig.json`
+Then add `rescript-react-native-elements` to `rescript.json`
 
 ```json
 "bs-dependencies": ["rescript-react-native-elements"]
