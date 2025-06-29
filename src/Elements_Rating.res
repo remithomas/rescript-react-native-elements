@@ -18,7 +18,7 @@ module Rating = {
     ~showRating: bool=?,
     ~startingValue: float=?,
     ~style: Style.t=?,
-    ~_type: @string("type")
+    ~_type: @as("type")
     [
       | #star
       | #rocket

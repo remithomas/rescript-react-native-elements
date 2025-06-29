@@ -16,4 +16,4 @@ package-lock.json
 **/lib/ocaml
 **/.merlin
 
-*.bs.js
+*.res.js
