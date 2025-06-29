@@ -7,7 +7,7 @@ let make = () =>
       h1=true
       h1Style={
         open Style
-        style(~paddingHorizontal=10.->dp, ~paddingVertical=20.->dp, ())
+        ReactNative.Style.s({paddingHorizontal: 10.->dp, paddingVertical: 20.->dp})
       }>
       {React.string("hello")}
     </Elements.Text>

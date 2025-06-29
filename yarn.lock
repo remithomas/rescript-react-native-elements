@@ -2,22 +2,27 @@
 # yarn lockfile v1
 
 
-"@rescript/react@^0.10.3":
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.10.3.tgz#a2a8bed6b017940ec26c2154764b350f50348889"
-  integrity sha512-Lf9rzrR3bQPKJjOK3PBRa/B3xrJ7CqQ1HYr9VHPVxJidarIJJFZBhj0Dg1uZURX+Wg/xiP0PHFxXmdj2bK8Vxw==
+"@rescript/core@^1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@rescript/core/-/core-1.6.1.tgz#159670c94d64a2b8236f46be2bf09a007b1ece08"
+  integrity sha512-vyb5k90ck+65Fgui+5vCja/mUfzKaK3kOPT4Z6aAJdHLH1eljEi1zKhXroCiCtpNLSWp8k4ulh1bdB5WS0hvqA==
 
-prettier@^2.2.0:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
-  integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
+"@rescript/react@^0.13.1":
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.13.1.tgz#19a90b2de39e4742bf73f834fe795fa9db5e06d5"
+  integrity sha512-VIWtu/sAJyYmDVoAhit0LHDYQrW6RqZ6z8sh8san5cjEAT4klv8JWkiaSK3FGUfooUDkGUXXgKTkqyj8zRR21w==
 
-rescript-react-native@^0.66.0:
-  version "0.66.0"
-  resolved "https://registry.yarnpkg.com/rescript-react-native/-/rescript-react-native-0.66.0.tgz#2b6981dce30ffd0b88cd7c585cd05609a6177a4d"
-  integrity sha512-EuB1gAYjrXO7LtYRxB+/doJw9jX0oKhefpJ4yiREsYd2AW4lMva8UVAHh1GKV7jkDW9012jdyfY6E81mzl7ysQ==
+prettier@^3.6.2:
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.6.2.tgz#ccda02a1003ebbb2bfda6f83a074978f608b9393"
+  integrity sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==
 
-rescript@^9.1.4:
-  version "9.1.4"
-  resolved "https://registry.yarnpkg.com/rescript/-/rescript-9.1.4.tgz#1eb126f98d6c16942c0bf0df67c050198e580515"
-  integrity sha512-aXANK4IqecJzdnDpJUsU6pxMViCR5ogAxzuqS0mOr8TloMnzAjJFu63fjD6LCkWrKAhlMkFFzQvVQYaAaVkFXw==
+rescript-react-native@^0.77.4:
+  version "0.77.4"
+  resolved "https://registry.yarnpkg.com/rescript-react-native/-/rescript-react-native-0.77.4.tgz#592a58f4c90c524989346d2c6b7edb799451d353"
+  integrity sha512-wDknv6RrHidmg5nnEwunIZXJOcRmtqji4Vg3MWj/q568w3+7Ta8xigrquEtR4bzdmELGG0l1AvvOjjNEF+iffA==
+
+rescript@^11.1.4:
+  version "11.1.4"
+  resolved "https://registry.yarnpkg.com/rescript/-/rescript-11.1.4.tgz#9a42ebc4fc5363707e39cef5b3188160b63bee42"
+  integrity sha512-0bGU0bocihjSC6MsE3TMjHjY0EUpchyrREquLS8VsZ3ohSMD+VHUEwimEfB3kpBI1vYkw3UFZ3WD8R28guz/Vw==

@@ -17,7 +17,7 @@ let list = [
 ]
 
 @react.component
-let make = () =>
+let make = () => {
   <FlatList
     keyExtractor={(_item, index) => string_of_int(index)}
     data=list
@@ -33,3 +33,4 @@ let make = () =>
       </ListItem>
     }}
   />
+}

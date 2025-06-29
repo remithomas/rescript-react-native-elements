@@ -3,7 +3,7 @@ open ReactNative
 module BadgeValue = {
   type t
 
-  external fromString: string => t = ""
+  @send external fromString: string => t = ""
   // Todo: value as React.element
   // [@bs.module "react-native-elements"] external fromReactElement: React.element => t = "";
 }

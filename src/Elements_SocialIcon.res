@@ -1,5 +1,38 @@
 open ReactNative
 
+@unboxed
+type iconType =
+  | @as("angellist") Angellist
+  | @as("codepen") Codepen
+  | @as("envelope") Envelope
+  | @as("etsy") Etsy
+  | @as("facebook") Facebook
+  | @as("flickr") Flickr
+  | @as("foursquare") Foursquare
+  | @as("github-alt") GithubAlt
+  | @as("github") Github
+  | @as("gitlab") Gitlab
+  | @as("instagram") Instagram
+  | @as("linkedin") Linkedin
+  | @as("medium") Medium
+  | @as("pinterest") Pinterest
+  | @as("quora") Quora
+  | @as("reddit-alien") RedditAlien
+  | @as("soundcloud") Soundcloud
+  | @as("stack-overflow") StackOverflow
+  | @as("steam") Steam
+  | @as("stumbleupon") Stumbleupon
+  | @as("tumblr") Tumblr
+  | @as("twitch") Twitch
+  | @as("twitter") Twitter
+  | @as("google") Google
+  | @as("google-plus-official") GooglePlusOfficial
+  | @as("vimeo") Vimeo
+  | @as("vk") Vk
+  | @as("weibo") Weibo
+  | @as("wordpress") Wordpress
+  | @as("youtube") Youtube
+
 @react.component @module("react-native-elements")
 external make: (
   ~button: bool=?,
@@ -11,7 +44,7 @@ external make: (
   ~iconColor: Color.t=?,
   ~iconSize: int=?,
   ~iconStyle: Style.t=?,
-  ~_type: @string("type")
+  ~_type: @as("type")
   [
     | #material
     | @as("material-community") #materialCommunity
@@ -35,39 +68,7 @@ external make: (
   ~raised: bool=?,
   ~style: Style.t=?,
   ~title: string=?,
-  ~iconType: @string
-  [
-    | #angellist
-    | #codepen
-    | #envelope
-    | #etsy
-    | #facebook
-    | #flickr
-    | #foursquare
-    | @as("github-alt") #githubAlt
-    | #github
-    | #gitlab
-    | #instagram
-    | #linkedin
-    | #medium
-    | #pinterest
-    | #quora
-    | @as("reddit-alien") #redditAlien
-    | #soundcloud
-    | @as("stack-overflow") #stackOverflow
-    | #steam
-    | #stumbleupon
-    | #tumblr
-    | #twitch
-    | #twitter
-    | #google
-    | @as("google-plus-official") #googlePlusOfficial
-    | #vimeo
-    | #vk
-    | #weibo
-    | #wordpress
-    | #youtube
-  ],
+  ~iconType: iconType,
   ~underlayColor: Color.t=?,
   unit,
 ) => React.element = "SocialIcon"

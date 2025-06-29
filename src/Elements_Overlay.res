@@ -35,7 +35,7 @@ external make: (
     | #formSheet
     | #overFullScreen
   ]=?,
-  ~supportedOrientations: array<Modal.Orientation.t>=?,
+  ~supportedOrientations: array<Modal.orientation>=?,
   ~transparent: bool=?,
   unit,
 ) => React.element = "Overlay"

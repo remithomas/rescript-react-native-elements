@@ -1,0 +1,31 @@
+{
+  "name": "rescript-react-native-elements",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    },
+    {
+      "dir": "examples",
+      "subdirs": true,
+      "type": "dev"
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "esmodule",
+      "in-source": false
+    }
+  ],
+  "suffix": ".res.js",
+  "bs-dependencies": [
+    "@rescript/core",
+    "@rescript/react",
+    "rescript-react-native"
+  ],
+  "jsx": {
+    "version": 4
+  },
+  "bsc-flags": ["-open RescriptCore"],
+  "namespace": "react-native-elements"
+}

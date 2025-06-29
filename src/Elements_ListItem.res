@@ -87,7 +87,7 @@ module Chevron = {
     ~reverseColor: Color.t=?,
     ~size: int=?,
     ~solid: bool=?,
-    ~_type: @string("type")
+    ~_type: @as("type")
     [
       | #material
       | @as("material") #material
