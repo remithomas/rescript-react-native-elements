@@ -1,6 +1,6 @@
 {
   "name": "rescript-react-native-elements",
-  "version": "3.4.1",
+  "version": "3.4.2",
   "description": "React Native Elements bindings for rescript",
   "keywords": [
     "rescript",
@@ -15,21 +15,20 @@
     "re:build": "rescript",
     "re:clean-build": "rescript clean && rescript",
     "start": "yarn re:start",
-    "build": "yarn re:build",
-    "lint:staged": "lint-staged"
+    "build": "yarn re:build"
   },
   "peerDependencies": {
-    "@rescript/react": "^0.13.0",
+    "@rescript/react": "^0.14.0",
     "react-native": "^0.63.3",
     "react-native-elements": "^3.4.0",
     "rescript-react-native": "^0.63.2"
   },
   "devDependencies": {
-    "@rescript/core": "^1.6.1",
-    "@rescript/react": "^0.13.1",
-    "prettier": "^3.6.2",
-    "rescript": "^11.1.4",
-    "rescript-react-native": "^0.77.4"
+    "@rescript/react": "^0.14.0",
+    "prettier": "^3.7.1",
+    "react-native-elements": "^3.4.0",
+    "rescript": "^12.0.0",
+    "rescript-react-native": "^0.78.1"
   },
   "author": "Remi THOMAS",
   "license": "ISC"

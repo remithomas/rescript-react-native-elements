@@ -18,7 +18,7 @@ module StrOrNode = {
 
   let encodeOpt = Belt.Option.map(_, encode)
   let encodeValue = value =>
-    switch value |> encodeOpt {
+    switch value->encodeOpt {
     | None => nodeToJs(React.null)
     | Some(r) => r
     }
@@ -35,7 +35,7 @@ module BoolOrNode = {
 
   let encodeOpt = Belt.Option.map(_, encode)
   let encodeValue = value =>
-    switch value |> encodeOpt {
+    switch value->encodeOpt {
     | None => nodeToJs(React.null)
     | Some(r) => r
     }
@@ -53,8 +53,25 @@ module PropsOrNode = {
 
   let encodeOpt = Belt.Option.map(_, encode)
   let encodeValue = value =>
-    switch value |> encodeOpt {
+    switch value->encodeOpt {
     | None => nodeToJs(React.null)
     | Some(r) => r
     }
 }
+
+type iconType = [
+  | #material
+  | #"material-community"
+  | #"font-awesome"
+  | #"font-awesome-5"
+  | #octicon
+  | #ionicon
+  | #foundation
+  | #evilicon
+  | #"simple-line-icon"
+  | #zocial
+  | #entypo
+  | #feather
+  | #antdesign
+  | #fontisto
+]

@@ -1,7 +1,7 @@
 open ReactNative
 
 @deriving(abstract)
-type jsProps = {"activeOpacity": Js.nullable<float>}
+type jsProps = {"activeOpacity": Nullable.t<float>}
 
 type icon = {
   name: string,

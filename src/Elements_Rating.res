@@ -1,6 +1,14 @@
 open ReactNative
 
 module Rating = {
+  type ratingType = [
+    | #star
+    | #rocket
+    | #bell
+    | #heart
+    | #custom
+  ]
+
   @react.component @module("react-native-elements")
   external make: (
     ~fractions: int=?,
@@ -18,14 +26,7 @@ module Rating = {
     ~showRating: bool=?,
     ~startingValue: float=?,
     ~style: Style.t=?,
-    ~_type: @as("type")
-    [
-      | #star
-      | #rocket
-      | #bell
-      | #heart
-      | #custom
-    ]=?,
+    ~_type: ratingType=?,
   ) => React.element = "Rating"
 }
 

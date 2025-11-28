@@ -44,23 +44,7 @@ external make: (
   ~iconColor: Color.t=?,
   ~iconSize: int=?,
   ~iconStyle: Style.t=?,
-  ~_type: @as("type")
-  [
-    | #material
-    | @as("material-community") #materialCommunity
-    | @as("font-awesome") #fontAwesome
-    | @as("font-awesome-5") #fontAwesome5
-    | @as("octicon") #octicon
-    | @as("ionicon") #ionicon
-    | @as("foundation") #foundation
-    | @as("evilicon") #evilicon
-    | @as("simple-line-icon") #simpleLineIcon
-    | @as("zocial") #zocial
-    | @as("entypo") #entypo
-    | @as("feather") #feather
-    | @as("antdesign") #antdesign
-    | @as("fontisto") #fontisto
-  ],
+  ~_type: iconType=?,
   ~light: bool=?,
   ~loading: bool=?,
   ~onPress: Event.pressEvent => unit=?,

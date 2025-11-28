@@ -19,7 +19,7 @@ let list = [
 @react.component
 let make = () => {
   <FlatList
-    keyExtractor={(_item, index) => string_of_int(index)}
+    keyExtractor={(_item, index) => Int.toString(index)}
     data=list
     renderItem={itemProps => {
       let item = itemProps.item
