@@ -7,9 +7,7 @@ type case =
 module OrientationChangeEvent = {
   type payload = {orientation: Modal.orientationChange}
 
-  include Event.SyntheticEvent({
-    type _payload = payload
-  })
+  include Event.SyntheticEvent({type _payload = payload})
 }
 
 @react.component @module("react-native-elements")

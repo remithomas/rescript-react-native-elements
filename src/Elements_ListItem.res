@@ -32,15 +32,15 @@ type jsProps = {
   // /* _ViewComponent: React.element=?, */
   // /* pad: int=?, */
   jsUnsafe,
-  "containerStyle": Js.nullable<Style.t>,
-  "onPress": Js.nullable<unit => unit>,
-  "onLongPress": Js.nullable<unit => unit>,
-  "disabled": Js.nullable<bool>,
-  "disabledStyle": Js.nullable<Style.t>,
-  "topDivider": Js.nullable<bool>,
-  "bottomDivider": Js.nullable<bool>,
+  "containerStyle": Nullable.t<Style.t>,
+  "onPress": Nullable.t<unit => unit>,
+  "onLongPress": Nullable.t<unit => unit>,
+  "disabled": Nullable.t<bool>,
+  "disabledStyle": Nullable.t<Style.t>,
+  "topDivider": Nullable.t<string>,
+  "bottomDivider": Nullable.t<string>,
   "_ViewComponent": jsUnsafe,
-  "pad": Js.nullable<int>,
+  "pad": Nullable.t<string>,
 }
 
 @react.component @module("react-native-elements")
@@ -87,24 +87,7 @@ module Chevron = {
     ~reverseColor: Color.t=?,
     ~size: int=?,
     ~solid: bool=?,
-    ~_type: @as("type")
-    [
-      | #material
-      | @as("material") #material
-      | @as("material-community") #materialCommunity
-      | @as("font-awesome") #fontAwesome
-      | @as("font-awesome-5") #fontAwesome5
-      | @as("octicon") #octicon
-      | @as("ionicon") #ionicon
-      | @as("foundation") #foundation
-      | @as("evilicon") #evilicon
-      | @as("simple-line-icon") #simpleLineIcon
-      | @as("zocial") #zocial
-      | @as("entypo") #entypo
-      | @as("feather") #feather
-      | @as("antdesign") #antdesign
-      | @as("fontisto") #fontisto
-    ]=?,
+    ~_type: iconType=?,
     ~underlayColor: Color.t=?,
     ~_Component: React.element=?,
     unit,

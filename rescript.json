@@ -18,14 +18,10 @@
     }
   ],
   "suffix": ".res.js",
-  "bs-dependencies": [
-    "@rescript/core",
-    "@rescript/react",
-    "rescript-react-native"
-  ],
+  "dependencies": ["@rescript/react", "rescript-react-native"],
   "jsx": {
     "version": 4
   },
-  "bsc-flags": ["-open RescriptCore"],
+  "compiler-flags": [],
   "namespace": "react-native-elements"
 }
